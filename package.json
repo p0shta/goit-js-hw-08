@@ -1,5 +1,5 @@
 {
-    "name": "parcel-project-template",
+    "name": "goit-js-hw-08",
     "version": "1.1.0",
     "description": "",
     "main": "index.js",
@@ -10,13 +10,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+        "url": "git+https://p0shta.github.io/goit-js-hw-08.git"
     },
     "keywords": [],
     "author": "Maksym Pshenychnyi <maksim_pshenichniy@mail.ru>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/goitacademy/parcel-project-template/issues"
+        "url": "https://p0shta.github.io/goit-js-hw-08/issues"
     },
     "devDependencies": {
         "parcel-bundler": "^1.12.5",
