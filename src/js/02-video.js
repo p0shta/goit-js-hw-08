@@ -9,7 +9,7 @@ const player = new Vimeo(refs.iframe);
 const savedPlayerTimeData = localStorage.getItem('videoplayer-current-time');
 const parsedPlayerTimeData = JSON.parse(savedPlayerTimeData);
 
-if (localStorage.getItem('videoplayer-current-time')) {
+if (savedPlayerTimeData) {
     player.setCurrentTime(parsedPlayerTimeData.seconds);
 }
 

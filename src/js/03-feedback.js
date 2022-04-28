@@ -1,4 +1,5 @@
 import throttle from 'lodash.throttle';
+import { Notify } from 'notiflix';
 
 const refs = {
     form: document.querySelector('.feedback-form'),
@@ -30,8 +31,11 @@ refs.form.addEventListener('submit', onFormSubmit);
 function onFormSubmit(e) {
     e.preventDefault();
     if (refs.email.value === '') {
-        console.log('Please. Enter your email');
+        Notify.failure('Please. Enter your email');
+    } else if (refs.message.value === '') {
+        Notify.failure('Please. Enter your message');
     } else {
+        Notify.success('Thank you!');
         console.log(JSON.parse(localStorage.getItem('feedback-form-state')));
 
         clearFormData();
